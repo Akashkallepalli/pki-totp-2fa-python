@@ -1,0 +1,9 @@
+
+encrypted_seed.txt
+
+_pycache_/
+*.pyc
+venv/
+.env
+.vscode/
+.idea/
