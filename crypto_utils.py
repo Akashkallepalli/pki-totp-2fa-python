@@ -1,3 +1,4 @@
+
 from pathlib import Path
 import base64
 
@@ -59,4 +60,4 @@ def encrypt_with_public_key(data: bytes, public_key) -> bytes:
             label=None,
         ),
     )
-    return ciphertext
+    return ciphertext
