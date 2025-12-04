@@ -1,5 +1,12 @@
+#!/usr/bin/env python3
 import sys
+import os
 from datetime import datetime, timezone
+
+# ---- FIX IMPORT ISSUE FOR CRON ----
+# Add project root (parent directory of "scripts") to PYTHONPATH
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+# ------------------------------------
 
 from app.totp_utils import generate_totp_code
 from app.config import SEED_FILE
